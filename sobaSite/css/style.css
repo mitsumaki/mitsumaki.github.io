@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  background-color: rgb(255, 255, 255);
+}
+
+header .navi-icon {
+  bottom: auto;
+  display: flex;
+  flex: none;
+  height: 40px;
+  left: auto;
+  margin: 0 0 0 0;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 40px;
+  z-index: 2;
+  max-width: 100%;
+  cursor:pointer;
+}
+
+.menu-modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.menu-modal .nav {
+  position: fixed;
+  right: 0px;
+  width: 270px;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+  padding: 30px;
+}
+
+.menu-modal .close-icon {
+  display: flex;
+  justify-content: flex-end;
+  cursor:pointer;
+}
+
+.menu-modal .soba-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.menu-modal .soba-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-modal ul {
+  text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+  padding: 90px;
+  margin-top: 20px;
+}
+
+.menu-modal ul li {
+  writing-mode: vertical-rl;
+  font-size: 18px;
+}
+
+.menu-modal ul li a,
+.menu-modal ul li a:link,
+.menu-modal ul li a:visited {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-modal ul li a:hover {
+  color: #888;
+}
+
+main .hero-image {
+  background: url(../images/soba-free.jpg) no-repeat right top;
+  background-size: cover;
+  height: 100vh;
+  padding: 100px 100px 60px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+main .catch {
+  color: #000;
+  font-size: 50px;
+  writing-mode: vertical-rl;
+  font-family: 'Times New Roman', Times, serif
+}
+
+main section {
+  padding: 75px 100px 0;
+}
+
+main .title {
+  margin: 0px 0px 70px 0px;
+}
+
+main h1 {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1;
+}
+
+main p {
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.2em;
+  line-height: 2.6;
+  font-style: normal;
+  color: #000000;
+}
+
+main #gallery {
+  /* padding: 0 10px; */
+}
+
+main #gallery .soba-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+main #gallery .soba-list .list-item {
+  width: calc(50% - 10px);
+  height: 420px;
+  margin: 0px 0px 20px 0px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+main #gallery .soba-list .list-item:hover img {
+  transform: scale(1.1);
+
+}
+
+main #gallery .soba-list .list-item:hover p {
+  opacity: 1;
+}
+
+
+main #gallery .soba-list .list-item img {
+  width: 100%;
+  height: 420px;
+  /* height: auto; */
+  object-fit: cover;
+  transition-duration: 2s;
+}
+
+
+main #gallery .soba-list .list-item p {
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+main #gallery .soba-list .list-item p:hover {
+  opacity: 1;
+}
+
+main #making .making-list {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  overflow-x: scroll;
+}
+
+main #making .making-list .list-item {
+  /* width: 90%; */
+  width: 700px;
+  margin: 5px;
+  flex-shrink: 0;
+
+}
+
+main #making .making-list .list-item img {
+  width: 100%;
+  height: 75%;
+  display: block;
+  object-fit: cover;
+}
+
+main #making .making-list .list-item .text {
+  font-size: 14px;
+}
+
+main #favorite .store-list {
+  counter-reset: rank;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+
+}
+
+main #favorite .store-item {
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  align-content: flex-start;
+  align-items: flex-start;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 10%);
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0 auto 30px;
+  box-sizing:border-box
+}
+
+main #favorite .store-item::before { /* ラベルと順位のスタイル */
+  content: "";
+  position: absolute;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid rgba(0,0,0,0.8);
+  top: 0px;
+  right:0px;
+}
+
+main #favorite .store-item::after { /* ラベルと順位のスタイル */
+  counter-increment: rank;
+  content: counter(rank) " 位";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 8px 14px;
+}
+
+main #favorite .store-item img {
+  width: 30%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+main #favorite .store-item .store-content {
+  margin: 0 0 0 30px;
+  font-family: sans-serif;
+}
+
+main #favorite .store-item .store-content p{
+  line-height: 2;
+}
+
+main #favorite .store-item .store-content h3{
+  margin: 0 0;
+}
+
+footer {
+  background-color: #3b3b3b;
+  width: 100%;
+  height: auto;
+  color: #aaaaaa;
+  text-align: center;
+  justify-content: center;
+  padding: 80px 0px 80px 0px;
+
+}
+
+footer .copyright {
+  align-items: center;
+  align-content: center;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: 'EB Garamond';
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  margin: 0px 0px 0px;
+}
+
+footer .sns-icon {
+  background: rgba(0, 0, 0, 0.0);
+  border-radius: 0;
+  flex-direction: row;
+  height: 50px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0 0 0 0;
+}
+
+.fa-brands {
+  font-size: 18px;
+  height: 30px;
+  margin: 0px 10px 0px;
+
+}
+
+@media screen and (max-width: 1160px) {
+
+}
+@media screen and (max-width: 768px) {
+  main .catch {
+    margin-left: 0;
+  }
+  main section {
+    padding: 75px 30px 0;
+  }
+  main #gallery .soba-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  main #gallery .soba-list .list-item {
+    width: 100%;
+    height: 420px;
+    margin: 0px 0px 30px 0px;
+  }
+  main #making .making-list {
+    height: 500px;
+  }
+  
+  main #making .making-list .list-item {
+    width: 90%;  
+  }
+
+}
+@media screen and (max-width: 480px) {
+  main .catch {
+    font-size: 40px;
+    margin-right: 0;
+  }
+
+  main p {
+    font-size: 13px;
+  }
+
+  main section {
+    padding: 75px 16px 0;
+  }
+
+  main #making .making-list .list-item img {
+    height: 70%;
+  }
+
+  main #making .making-list .list-item .text {
+    font-size: 12px;  
+  }
+
+  main #favorite .store-item {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  main #favorite .store-item img {
+    width: 100%;
+    margin-bottom: 28px;
+    max-height: 330px;
+  }
+
+  main #favorite .store-item .store-content {
+    margin: 0%;
+  } 
+
+  main #favorite .store-item .store-content p {
+    font-size: 12px;
+  } 
+
+}

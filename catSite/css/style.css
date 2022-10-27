@@ -1,0 +1,472 @@
+@charset "UTF-8";
+body {
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: #000;
+}
+
+a,
+a:link {
+    color: #3585b7
+}
+a:visited {
+    color: #6252b7;
+}
+a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+}
+
+header h1 {
+    margin: 25px 0 0 20px;
+}
+
+header nav {
+    margin: 0 0 0 auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    color: #888;
+}
+
+header nav .current,
+header nav .current:link,
+header nav .current:visited {
+    border-bottom: solid 1px #888;
+    color: #888;
+}
+
+.fa {
+    display: none !important;
+    float: right;
+    color: #000;
+    margin: 25px 10px 10px 10px;
+}
+
+.menu-modal {
+    display: none;
+    position: fixed;
+    width: 100%; 
+    height: calc(100% - 80px);
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 2147483647;
+}
+
+.menu-modal ul {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-modal ul li {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.menu-modal ul li a,
+.menu-modal ul li a:link,
+.menu-modal ul li a:visited {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-modal ul li a:hover {
+    color: #888;
+}
+
+
+/* footer */
+footer {
+    background-color: #ede6e6;
+    padding: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0 0 5px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul li {
+    margin: 0 0 0 20px;
+}
+
+footer ul li a,
+footer ul li a:link,
+footer ul li a:visited {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+}
+footer ul li a:hover {
+    color: #888;
+}
+
+footer p{
+    margin: 0;
+    text-align: right;
+    color: #888;
+}
+
+/* main */
+main dl {
+    width: 100%;
+}
+
+main dl dt {
+    float: left;
+    clear: both;
+    padding: 10px 0;
+    color: #998484;
+}
+
+main dl dd {
+    border-bottom: solid 1px #ccc;
+    margin: 0;
+    padding: 10px 0 10px 15%;
+}
+
+main .inner {
+    width: 990px;
+    margin: 50px auto;
+}
+
+main h2 {
+    margin: 50px 0 20px;
+    font-weight: normal;
+    font-size: 25px;
+    color: #7f6666;
+}
+
+main p {
+    margin: 0 0 15px;
+}
+
+main .title {
+    padding: 50px;
+    background-color: #f4e3e3;
+}
+
+main .title h1 {
+    margin: 0;
+    line-height: 1;
+    font-size: 45px;
+    color: #7f6666;
+}
+
+main .title ol {
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+    display: flex;
+}
+
+main .title ol li {
+    font-size: 13px;
+}
+
+main ul {
+    margin: 0 0 60px;
+    padding: 0 0 0 20px;
+}
+
+/* home */
+main .visual{
+    background:url(../images/visual.jpg) no-repeat center top;
+    height: 550px;
+    padding: 200px 50px 50px;
+    box-sizing: border-box;
+}
+
+main .visual p{
+    color: #7f6666;
+}
+
+main .visual p.catch {
+    font-size: 45px;
+}
+
+main section {
+    display: flex;
+    margin-top: 50px;
+}
+
+main section div {
+    padding: 0 40px 0 0;
+}
+
+main section:first-child {
+    flex-direction: row-reverse;
+}
+
+main section:first-child div {
+    padding: 0 0 0 40px;
+}
+
+main .title ol li::after {
+    content: ">";
+    margin: 0 5px 0 10px;
+}
+
+main .title ol li:last-child::after {
+    content: none;
+}
+
+/* guide */
+.guide main .about {
+    display: flex;
+}
+
+.guide main .about div {
+    width: 50%;
+}
+
+.guide main dl {
+    font-size: 18px;
+}
+
+.guide main dd {
+    border: none;
+    padding-left: 5em; 
+}
+
+.guide main table {
+    width: 100%;
+    text-align: center;
+}
+
+.guide main table,
+.guide main table th,
+.guide main table td {
+    border: solid 1px #ccc;
+    border-collapse: collapse;
+}
+
+.guide main table th,
+.guide main table td {
+    padding: 5px;
+}
+
+.guide main table th {
+    background: #f7f0f0;
+    color: #998484;
+}
+
+
+/* cast */
+.cast main section {
+    margin: 50px 0 0;
+    
+}
+.cast main section div {
+    margin: 0 0 0 50px;
+    width: 50%;
+}
+
+/* access */
+.access main .inner .gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    }
+
+.access main .inner .gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    }
+
+/* contact */
+.contact main .must {
+    margin: 0.5;
+    color: #d23939;
+}
+
+.contact main p {
+    /* margin: 0 0 50px; */
+}
+
+.contact main dl dd {
+    padding-left: 15em;
+}
+
+.contact main input {
+    border: solid 1px #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.contact main input[name="email"] {
+    width: 50%;
+}
+
+.contact main textarea {
+    width: 100%;
+    border: solid 1px #ccc;
+}
+
+.contact main .submit {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact main .submit input {
+    padding: 20px;
+    width: 300px;
+    background: #7f6666;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact main .submit input:hover {
+    background: #a79090;
+}
+
+/* sitemap */
+.sitemap main ul{
+    margin-top: 50px;
+}
+
+.sitemap main ul li {
+    margin: 0 0 20px;
+}
+
+@media screen and (max-width: 990px) {
+    main .inner {
+        width: 100%;
+    }
+
+    .guide main .inner img {
+        width: 100%;
+
+    }
+}
+@media screen and (max-width: 769px) {
+
+
+}
+@media screen and (max-width: 640px) {
+    main section {
+        margin: 50px 0 0;
+        flex-direction: column;
+    }
+
+    main section img {
+        margin: 0 20px;
+    }
+
+    main p {
+        margin: 15px 0 0 15px;
+    }
+
+    main h2 {
+        margin: 0px 0 0 15px;
+    }
+
+    main section:first-child {
+        margin: 50px 0 0;
+        flex-direction: column;
+    }
+
+    main section:first-child div {
+        padding: 0px 5px;
+    }
+
+    main section div {
+        padding: 0px 5px;
+    }
+
+    main dl {
+        margin-left: 15px;
+    }
+
+    .guide main .about div {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .guide main .about {
+        flex-direction: column;
+    }
+
+    .guide main h2 {
+        margin: 30px 0 0 15px;
+    }
+
+    main .inner .info {
+        /* width: 100%; */
+        margin-right: 25px;
+    }
+
+    main dl dt {
+        float: none;
+        padding: 5px 0;
+    }
+    
+    main dl dd {
+        padding: 5px 0 5px 0;
+    }
+
+    .guide main dd {
+        padding-left: 0;
+    }
+    .contact main dl dd {
+        padding-left: 0;
+    }
+
+    .contact main textarea {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .fa {
+        display: block !important;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+}
