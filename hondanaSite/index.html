@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Hondana</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo"><a href="/index.html"><img src="images/hondana_logo_fix_rgb_sns.png" alt="logo"></a></div>
+            <ul class="nav-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navi-icon">
+                <!-- <i class="fa-solid fa-bars-staggered fa-3x"></i> -->
+                <i><img src="/images/menu-bar.png"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-modal">
+        <div class="nav">
+            <div class="close-icon">
+                <!-- <i class="fa-regular fa-circle-xmark  fa-3x"></i> -->
+                <i><img src="/images/close.png"></i>
+            </div>
+            <ul>
+                <div class="border"></div>
+                <li><a href="/index.html">Home</a></li>
+                <div class="border"></div>
+                <li><a href="#about">About</a></li>
+                <div class="border"></div>
+                <li><a href="#service">Service</a></li>
+                <div class="border"></div>
+                <li><a href="#work">Works</a></li>
+                <div class="border"></div>
+                <li><a href="#contact">Contact</a></li>
+                <div class="border"></div>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="hero-image">
+            <p class="catch">本のある<br>暮らしを。</p>
+        </div>
+        <section id="about" class="fadein">
+            <div class="title">
+                <p>[About]</p>
+            </div>
+            <div class="content">
+                <p>
+                    Hondana(ホンダナ)は選書サービスを中心とした、固定店舗のない本屋です。
+                    <br>
+                    みなさまにとって本棚のように、本を通じて、ワクワク楽しめるサービスを提供していきます。
+                </p>
+                <br>
+                Hondana is a bookstore with no fixed stores, focusing on book selection services.
+                <br>
+                Like a bookshelf for everyone, we will provide exciting and enjoyable services through books.
+            </div>
+        </section>
+
+        <section id="service" class="fadein">
+            <div class="title">
+                <p>[Service]</p>
+            </div>
+            <div class="content">
+                <div class="service-list">
+                    <div class="list-item fadein">
+                        <img src="images/item-1.jpg" alt="生粉そば">
+                        <p class="text">
+                            選書サービス
+                            <br>
+                            ¥1,500
+                        </p>
+                    </div>
+                    <div class="list-item fadein">
+                        <img src="images/item-2.jpg" alt="粗挽きそば">
+                        <p class="text">
+                            シーズンbook 〜秋〜 (文庫本1冊)
+                            <br>
+                            ¥1,000
+                        </p>
+                    </div>
+                    <div class="list-item fadein">
+                        <img src="images/item-3.jpg" alt="田舎そば">
+                        <p class="text">
+                            はてなbooks (文庫本2冊セット)
+                            <br>
+                            ¥2,000
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="work" class="fadein">
+            <div class="title">
+                <p>[Works]</p>
+            </div>
+            <div class="content">
+                <div class="making-list">
+                    <div class="list-item">
+                        <img src="images/work-1.jpeg" alt="活動１">
+                        <p class="text">古本市での出展の様子</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="images/work-2.png" alt="活動２">
+                        <p class="text">ショップカードのデザイン</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="images/work-3.png" alt="活動３">
+                        <p class="text">古本市の野外イベントで酒店した時の様子　その１</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="images/work-4.png" alt="活動４">
+                        <p class="text">古本市の野外イベントで酒店した時の様子　その２</p>
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="fadein">
+            <div class="title">
+                <p>[Contact]</p>
+            </div>
+            <div class="content">
+                <script src="https://sdk.form.run/js/v2/embed.js"></script>
+                <div class="formrun-embed" data-formrun-form="@hello-goodmorning-t-1660978807" data-formrun-redirect="true">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="sns-icon">
+            <a href="https://www.instagram.com/hondana.book/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="copyright">
+            Copyright &copy; 2022 Hondana site.
+        </p>
+    </footer>
+
+    <!-- script.jsの読み込み -->
+    <script src="script.js"></script>
+</body>
+
+</html>
