@@ -269,10 +269,41 @@ main #service .service-list .list-item {
   height: auto;
   margin: 0px 0px 20px 0px;
   position: relative;
-  /* display: inline-block; */
-  /* overflow: hidden; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
 }
+
+/*ボタンの形状*/
+.buy-button {
+  position:relative;
+  top:0;
+  padding:10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  margin: 20px 0px 20px 20px;
+  /*アニメーションの設定*/
+  transition: all .3s;
+  top:-3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*hoverをしたらボックスに影がつき、上に上がる*/
+.buy-button:hover {
+  color: rgb(141, 141, 141);
+}
+
+/*クリックをしたらボックスの影が消え、下に下がる*/
+.buy-button:active {
+  top:0px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+}
+
 
 main #service .service-list .list-item:hover img {
   filter: grayscale(0%);
@@ -293,6 +324,7 @@ main #service .service-list .list-item img {
 }
 
 
+
 main #gallery .soba-list .list-item p {
   color: rgb(255, 255, 255);
   font-family: 'Times New Roman', Times, serif;
@@ -308,6 +340,9 @@ main #gallery .soba-list .list-item p {
 main #gallery .soba-list .list-item p:hover {
   opacity: 1;
 }
+
+
+
 
 main #work .making-list {
   display: flex;
@@ -535,6 +570,18 @@ footer .sns-icon {
   main section {
     padding: 75px 20px 0;
   }
+
+  main #service .service-list .list-item {
+    flex-direction: column;
+  }
+
+  .buy-button {
+    text-align: center;
+    width: 100%;
+    box-sizing:border-box;
+    margin: 0;
+  }
+
 }
 
 .fadein {
