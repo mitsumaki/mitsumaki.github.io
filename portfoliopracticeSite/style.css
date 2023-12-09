@@ -1,0 +1,218 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-img2 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.navi {
+  display: flex;
+  background-color: #584131;
+  color: #fff;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+.navi li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.current {
+  background-color: #f47402;
+}
+
+.year {
+  max-width: 960px;
+  margin: 50px auto 10px;
+  font-size: 10vw;
+  color: #bbb;
+  padding: 0 20px;
+  
+}
+
+h3.year {
+  margin: 0 auto;
+}
+
+.list {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.list-item {
+  width: 100%;
+}
+
+.list-item-img {
+  text-align: center;
+}
+
+.list-item-img img {
+  max-width: 220px;
+}
+
+.menu-title {
+  padding-left: 10px;
+  color: #584131;
+}
+
+.list-item-txt {
+  padding: 0 10px;
+}
+
+.title {
+  color: rgb(255, 87, 34);
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 29px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #CFD8DC;
+  margin: 28px auto 0;
+  width: 100px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.portfolio_img {
+  max-width: 384px;
+}
+
+.portfolio_img img {
+  width: 100%;
+}
+
+.sub_title {
+  color: #f47402;
+  font-size: 2.0rem;
+  margin-bottom: -5px;
+}
+
+
+.about_list {
+  padding-left: 20px;
+}
+
+.my-portfolio {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.9rem;
+  color: #584131;
+}
+
+/*メディアクエリ*/
+@media(min-width: 376px) {
+  .list-item {
+    width: calc(100%/2);
+  }
+
+  .list-item-img img {
+    width: 90%;
+  }
+}
+
+@media(min-width: 640px) {
+  .list-item {
+    width: calc(100%/3);
+  }
+
+  .container {
+    display: flex
+  }
+
+  .left.margintop {
+    margin-top: 10px;
+  }
+
+  .right.margintop {
+    margin-top: 30px;
+  }
+
+  .right {
+    padding: 0 30px;
+  }
+
+  .right.margintop2{
+        margin-top: -10px;
+  }
+}
+
+@media(min-width: 769px) {
+  .list-item {
+    width: calc(100%/4);
+  }
+
+  .year {
+    font-size: 9rem;
+  }
+}
+
+.sns {
+  max-width: 960px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.sns li {
+  width: 46px;
+}
+
+.sns-icon {
+  width: 100%;
+}
+
+footer {
+  background-color: #f47402;
+  padding: 70px 0 30px;
+  margin-top: 50px;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+}
