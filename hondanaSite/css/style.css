@@ -132,8 +132,6 @@ header .nav-menu li {
   height: 100%;
   background: rgb(0, 0, 0);
   z-index: 10;
-  /* padding: 30px; */
-  /* padding: 0px; */
 }
 
 .menu-modal .close-icon {
@@ -207,7 +205,7 @@ header .nav-menu li {
 main .hero-image {
   background: url(../images/image-2.png) no-repeat center top;
   background-size: cover;
-  height: 680px;
+  height: 100vh;
   padding: 100px 100px 60px;
   box-sizing: border-box;
   width: 100%;
