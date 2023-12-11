@@ -546,6 +546,7 @@ footer .sns-icon {
     height: 420px;
     justify-content: flex-start;
     padding: 50px 30px 10px;
+    margin-top: 80px;
   }
 
   main .catch {
